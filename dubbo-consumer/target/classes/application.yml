@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: dubbo-consumer
+server:
+  port: 9091
+dubbo:
+  application:
+    name: dubbo-consumer-demo
+  registry:
+    client: zkclient
+    address: zookeeper://vagrant:2181

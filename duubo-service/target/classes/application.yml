@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: dubbo-service
+server:
+  port: 9090
+dubbo:
+  server:
+    version:
+      1.0.0
+  scan:
+    base-packages: com.carsonlius.dubbo.service
+  application:
+    name: dubbo-provider-demo
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address:  zookeeper://vagrant:2181
+    client: zkclient
